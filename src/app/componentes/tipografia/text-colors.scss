@@ -1,0 +1,25 @@
+:host {
+    .dark-low {
+        color: rgba(0, 0, 0, 0.44);
+    }
+
+    .dark-medium {
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    .dark-high {
+        color: rgba(0, 0, 0, 0.8);
+    }
+
+    .magenta {
+        color: hsl(332, 78, 56);
+    }
+
+    .light-solid {
+        color: #ffffff;
+    }
+
+    .light-high {
+        color: rgba(255, 255, 255, 0.8);
+    }
+}

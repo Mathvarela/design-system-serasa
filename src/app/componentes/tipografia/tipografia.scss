@@ -1,0 +1,114 @@
+:host {
+    .display {
+        font-family: Roboto;
+        letter-spacing: 1.2em;
+        font-weight: 700;
+    }
+
+    @media (min-width: 0px) {
+        .display {
+            font-size: 2.5rem;
+            line-height: 44px;
+        }
+    }
+
+    @media (min-width: 960px) {
+        .display {
+            font-size: 3rem;
+            line-height: 52px;
+        }
+    }
+
+    .heading-l {
+        font-family: Roboto;
+        letter-spacing: 1em;
+        font-weight: 700;
+    }
+
+    @media (min-width: 0px) {
+        .heading-l {
+            font-size: 2rem;
+            line-height: 36px;
+        }
+    }
+    @media (min-width: 960px) {
+        .heading-l {
+            font-size: 2.5rem;
+            line-height: 44px;
+        }
+    }
+
+    .heading-m {
+        font-family: Roboto;
+        letter-spacing: 0.8em;
+        font-weight: 700;
+    }
+    
+    @media (min-width: 0px) {
+        .heading-m {
+            font-size: 1.5rem;
+            line-height: 28px;
+        }
+    }
+    @media (min-width: 960px) {
+        .heading-m {
+            font-size: 2rem;
+            line-height: 36px;
+        }
+    }
+
+    .heading-s {
+        font-family: Roboto;
+        letter-spacing: 0.6em;
+        font-weight: 700;
+    }
+
+    @media (min-width: 0px) {
+        .heading-s {
+            font-size: 1.25rem;
+            line-height: 24px;
+        }
+    }
+    @media (min-width: 960px) {
+        .heading-s {
+            font-size: 1.5rem;
+            line-height: 28px;
+        }
+    }
+
+    .heading-xs {
+        font-family: Roboto;
+        letter-spacing: normal;
+        font-weight: 700;
+    }
+
+    @media (min-width: 0px) {
+        .heading-xs {
+            font-size: 1.125rem;
+            line-height: 22px;
+        }
+    }
+    @media (min-width: 960px) {
+        .heading-xs {
+            font-size: 1.25rem;
+            line-height: 24px;
+        }
+    }
+
+    .sub-heading {
+        font-family: Roboto;
+        letter-spacing: normal;
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 20px;
+    }
+
+    .body-m {
+        font-family: Roboto;
+        letter-spacing: normal;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 24px;
+    }
+
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <button id="myBtn" (click)="openModal()" class="btn">Open Modal</button>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="content">
+            <span class="close" (click)="closeModal()">&times;</span>
+            <div class="title">
+                <h1 class="magenta body-m">
+                    Deixa seu feedback
+                </h1>
+            </div>
+            <div class="form">
+                <div class="form-group">
+                    <label>Seu nome:</label>
+                    <input placeholder="Digite seu nome completo" [(ngModel)]="payload.name" #name="ngModel"
+                        [value]="payload.name" tabindex="1" autocomplete="on" type="text" id="name" />
+                </div>
+
+                <div class="form-group">
+                    <label>Sua nota:</label>
+                    <div id="rating" (click)="rateSelected()" (mouseover)="mouseoverRate($event)">
+                        <span *ngFor="let v of ratingArray" [attr.data-value]=v.valor class="rate fa fa-star">
+                        </span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Sua mensagem:</label>
+                    <textarea placeholder="Digite sua mensagem" [(ngModel)]="payload.message" #message="ngModel"
+                        [value]="payload.message" tabindex="2" id="message"></textarea>
+                </div>
+                <button tabindex="3" id="sendFeedback" class="btn" (click)="requestFeedback()">Enviar</button>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
